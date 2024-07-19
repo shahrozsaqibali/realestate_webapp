@@ -1,0 +1,162 @@
+.projectinforoot{
+    padding: 0% 35% 0% 15%;
+    margin-top: 2%;
+}
+
+
+
+.projectinfohero{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin-top: 2%;
+    border-radius: 5px;
+
+    position: relative;
+
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+
+}
+
+
+
+
+.projectinforherodetails{
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+}
+
+.projectinfoherotag{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color:#E84759 ;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.projectinfoherotag p{
+    margin: 0;
+    padding: 0;
+}
+
+
+.projectinforherodetails p{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Key Details CSS*/
+.keydetailsroot{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.keydetailInfo{
+    width: 50%;
+}
+
+.keydetailinfoheadingroot{
+    position: relative;
+}
+
+.keydetailInfoheading{
+    margin-bottom: 3%;
+}
+
+.keydetailInfoheading::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #E84759;
+    width: 60%;
+    height: 2px;
+}
+
+
+.keydetailMap{
+    width: 50%;
+}
+
+.keyreasonfield{
+    border: none;
+    height: 400px;
+    width: 100%;
+}
+
+.InfoImage{
+    width: 100%;
+}
+
+.ReasonToBuy{
+    margin-bottom: 3%;
+}
+
+.DownloadAssetsHeading{
+    margin-bottom: 3%;
+}
+
+.downloadAssetsLink{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.downloadAssetsLink a{
+    text-decoration: none;
+}
+
+.downloadAssetsLink a::after{
+    content: url("https://therealtybulls.com/wp-content/themes/realtybulls/assets/img/pdf-icon2.svg");
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .keydetailsroot{
+        flex-direction: column;
+    }
+    
+    .keydetailMap{
+        width: 100%;
+    }
+
+
+    .keydetailInfo{
+        width: 100%;
+    }
+
+    .projectinforoot{
+        padding: 0px 10px 0px 10px;
+        margin-top: 1%;
+    }
+}

@@ -1,0 +1,28 @@
+.titleCard-root{
+    color: white;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    padding: 0px 10px 30px 10px;
+    transition: box-shadow 0.3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.titleCard-root h2{
+    transition: transform 0.2s;
+}
+
+.titleCard-root:hover h2{
+    transform: scale(0.9);
+}
+
+.titleCard-root:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+}
+

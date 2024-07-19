@@ -1,0 +1,98 @@
+.tab{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+.tabcomponent{
+    width:  69%;
+    padding: 0;
+
+}
+
+.tabheader{
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid lightgrey;
+}
+
+
+.tabnav{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.tabnav li{
+   padding: 6px 6px 6px 0px;
+}
+
+.tablinks{
+    color: var(--background-color);
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-decoration: none;
+    transition: background-color  0.3s;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-color: var(--background-color) ;
+    padding: 6px 8px 6px 8px;
+    transition: box-shadow  0.3s;
+    transition: border-bottom 0.1s;
+    text-align: center;
+}
+
+.tablinks:hover{
+    color: #1C70BB;;
+}
+
+[aria-selected = true]{
+    border-bottom: 3px solid #1C70BB;
+    color: #1C70BB;
+}
+
+.tabbody{
+    position: relative;
+}
+
+.tabbody > div{
+    display: flex;
+    /* position: absolute; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 10px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    width: 100%;
+    gap: 30px;
+}
+
+.tabbody > div[hidden]{
+    /* opacity: 0 !important; */
+    display: none;
+
+}
+
+.tabfooter{
+    
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
+}
+.LinkText{
+    text-decoration: none;
+}
+
+/*header mobile version*/
+@media only screen and (max-width: 900px) {
+
+    .tab{
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+.cardlist{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardlist-head{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.cardlist-head h2::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    background-color:#1c70bb;
+}
+
+.cardlist--select{
+    font-family: "Karla", sans-serif;
+    font-size: 1rem;
+    padding: 5px 15px 5px 15px;
+    z-index: 4;
+}
+
+.cardlist-body{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    gap: 30px;
+}
+
+.nodataanimation{
+    align-self: center;
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .cardlist{
+        margin-top: 10%;
+    }
+
+.cardlist-head{
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardlist-head h2::after{
+
+    top: 23%;
+
+}
+
+
+}

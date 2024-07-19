@@ -1,0 +1,67 @@
+.banner-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateY(-50%);
+
+}
+
+.banner{
+    background-color: #1C70BB;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1.5%; 
+    min-width: 45%;
+    max-width: 50%;
+    border-radius: 15px;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.banner-action{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.banner-title{
+    flex-grow: 1;
+}
+
+.banner-title h2{
+    font-size: 1.6rem;
+}
+.banner-title p{
+    font-size: 1.1rem;
+}
+
+
+.banner p,h2{
+    margin: 0;
+}
+
+.banner p{
+    margin-top: 2px;
+}
+
+/*header mobile version*/
+@media only screen and (max-width: 900px) {
+
+    .banner-section{
+        transform: none;
+        margin-top: 5%;
+    }
+
+    .banner{
+        flex-direction: column;
+        align-items: start;
+        padding: 5%;
+        min-width: 85%;
+        max-width: 85%;
+
+    }
+
+}

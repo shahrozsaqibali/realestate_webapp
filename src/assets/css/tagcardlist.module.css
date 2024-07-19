@@ -1,0 +1,58 @@
+.tadcardsroot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tadcardsroot a{
+    text-decoration: none;
+}
+
+.tagcardpage{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tagcardpageitem{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #145085;
+    border: #145085 solid 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tagcardpageitemselected{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #145085;
+    border: #145085 solid 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+.tagcardpageitem:hover{
+    background-color: #145085;
+    color: white;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .tadcardsroot{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,73 @@
+.Bannertwo{
+    background-color:#E9F7FC ;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding:2% 3% 2% 3%;
+    border-radius: 15px;
+    transform: translateY(35%);
+}
+
+.BannerTwo-leftSide{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.BannerTwo-rightSide{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.BannerTwo-heading h1{
+    color: #27AAE1;
+}
+
+.BannerTwo-heading h2{
+    color: #145085;
+}
+
+.BannerTwo-heading> h1,h2{
+    margin: 0;
+}
+
+.BannerTwo-btn{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+
+
+/*header mobile version*/
+@media only screen and (max-width: 900px) {
+
+   .Bannertwo{
+    flex-direction: column;
+    width: 90%;
+    gap: 15px;
+    transform: translateY(10%);
+}
+
+   .BannerTwo-btn{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+   }
+
+   
+   .BannerTwo-heading h1{
+       color: #27AAE1;
+        font-size: 1.5rem;
+    }
+
+
+}

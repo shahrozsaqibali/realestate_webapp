@@ -1,0 +1,11 @@
+.AccordionList-root{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px){
+    .AccordionList-root{
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,64 @@
+.pagecontact-root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagecontact-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.pagecontact-card{
+    background-color: #E9ECEF;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pagecontact-card a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.pagecontact-form-map{
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;    
+}
+
+
+.pagecontact-map-frame{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 500px;
+    height: 100%;
+    border: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .pagecontact-cards{
+        flex-direction: column;
+    }
+
+    .pagecontact-form-map{
+        flex-direction: column;
+    }
+
+    .pagecontact-map-frame{
+        width: 100%;
+
+    }
+    
+}

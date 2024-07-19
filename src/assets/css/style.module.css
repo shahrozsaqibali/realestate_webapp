@@ -1,0 +1,339 @@
+:root{
+    --primary-color:#145085; 
+    --primary-text-color:white;
+    --primary-text-hover-color:black;
+    --primary-text-hover:#0FC6F0;
+    --background-color:#222441;
+    --background-color-banner:#FEBF49;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+}
+
+.headertopsidemenuburger{
+    display: none;
+}
+
+.headertopSide{
+    display: flex;
+    flex-direction: row;
+   
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    padding: 10px;
+}
+
+/*Topside Main Logo*/
+.headertopsidelogo img{
+    height: 50px;
+}
+
+/*Topside Main Navbar*/
+
+
+
+.headertopsidenav{
+    transform: translate(0%);
+    width: 46%;
+    
+}
+
+.headertopsidenavmobcloseicon{
+    display: none;
+}
+
+.headertopsidenavmain{
+    display: flex;
+    list-style: none;
+    padding: 0;   
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.headertopsidenavmain a{
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: color 0.2s;
+}
+
+.headertopsidenavmain a:hover{
+    color: var(--primary-text-hover);
+}
+
+
+
+.headernavpreconstructionsubmenu{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    display: none;
+    position: absolute;
+    top: 75%;
+    background-color: var(--background-color);
+    columns: 2;
+    padding: 15px;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+}
+
+.preconstruction:hover .headernavpreconstructionsubmenu {
+    display: block;
+}
+ 
+
+.headernavpreconstructionsubmenu ul{
+    display: block;
+    columns: 2;
+    list-style: none;
+    padding: 0;
+}
+
+.headernavpreconstructionsubmenu ul li{
+    
+    width: 100%;
+    padding: 5px;
+    margin: 1%;
+}
+
+
+/*Telephone button*/
+.headerrightside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    
+}
+
+
+.headertelephonebtn{
+    background-color: transparent;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    border-style: solid;
+    border-color: var(--primary-text-color);
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Karla", sans-serif;
+    transform: none;
+}
+
+.headertelephonebtn:hover{
+    background-color: var(--primary-text-color);
+}
+
+.headertelephonebtn:hover a{
+   color: black;
+}
+
+
+.headertelephonebtn a{
+    text-decoration: none;
+    color: var(--primary-text-color)
+}
+
+.headerPlatinumAccess{
+    background-color: var(--primary-text-hover);
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    border-radius: 5px
+}
+
+.headerPlatinumAccess a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+
+/*Mobile Search Box*/
+.headermiddleside{
+    display: none;
+    padding: 10px;
+}
+
+.headermobilesearchbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.headermobilesearchbox input{
+    width: 70%;
+    height: 25px;
+    padding: 10px ;
+    font-size: 1.05rem;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.headermobilesearchbox button{
+    padding: 10px;
+    width: 20%;
+    font-size: 1.1rem;
+    font-family: "Karla", sans-serif;
+    font-weight: 300;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border-style: none;
+    color: var(--primary-text-color);
+}
+
+
+.headerbanner{
+    background-color: var(--background-color-banner);
+    color: var(--primary-text-hover-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.headerbanner p{
+    margin: 2px;
+}
+
+.globalbuttonsmallar{
+
+    background-color: #222441;
+    transition: background-color 0.3s;
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Karla", sans-serif;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 6px 10px 6px 10px;
+}
+
+.globalbuttonsmallar:hover{
+    background-color: #323561;
+}
+
+
+
+
+.globalbuttonbig{
+    background-color: #2aace4;
+    transition: background-color 0.3s;
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Karla", sans-serif;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 12px 20px 12px 20px;
+}
+
+.globalbuttonbig:hover{
+    background-color: #2294c5;
+}
+
+
+
+.globalbuttoniconbig:hover{
+    background-color: #323561;
+}
+
+
+.globalbuttoniconbig{
+    background-color: #222441;
+    transition: background-color 0.3s;
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Karla", sans-serif;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 12px 20px 12px 20px;
+}
+
+.RealtiveSeparator{
+    height: 40px;
+    width: 100%;
+    background-color: #0FC6F0;
+    position: absolute;
+}
+
+
+
+
+/*header mobile version*/
+@media only screen and (max-width: 900px) {
+    
+    .preconstruction:hover .headernavpreconstructionsubmenu {
+         display: none;
+    }      
+
+    .headertopSide{
+        justify-content: space-between;
+        height: 50px;
+    }
+    
+    .headertopsidenavmobcloseicon{
+        display: block;
+        position: absolute;
+        left: 3%;
+        top: 3%;
+    }
+    
+    .headerPlatinumAccess{
+        display: none;
+    }
+
+    .headertopsidenav{
+        opacity: 0;
+        transform : translate(100%);
+        transition-timing-function: ease-in;
+        position: absolute;
+        z-index: 20000;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-color);
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        transition: transform 0.3s;
+    }
+
+    .headertopsidenavmain{
+        position: relative;
+        margin-top: 20%;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .headertopsidenavmain li a{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+   
+
+   
+
+    .headertopsidemenuburger{
+        display: flex;
+    }
+
+    .headertopsidemenuburger img{
+        width: 100%;
+    }
+    
+    .headermiddleside{
+        display: block;
+    }
+    
+    
+}
+
