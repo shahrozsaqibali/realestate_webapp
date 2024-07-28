@@ -13,21 +13,6 @@ export default function ProjectbySearch(){
 
 
 
-    React.useEffect(function(){    
-        async function collectData(){       
-            try{
-                const Response = await fetch(`http://localhost:1337/api/projects?filters[$or][0][locations][location][$eqi]=${search}&filters[$or][1][developers][developer_name][$eqi]=${search}&filters[$or][2][occupancy][$eqi]=${search}&filters[$or][3][tag][name][$eqi]=${search}&filters[$or][4][propertytype][$eqi]=${search}&populate=*`)
-                const data = await Response.json()
-   
-
-            }catch(Exception){
-                console.log(Exception)
-            }
-        }
-
-        collectData()
-    
-    },0)
 
     return (
         <div>

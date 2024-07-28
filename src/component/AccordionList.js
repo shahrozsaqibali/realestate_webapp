@@ -19,7 +19,8 @@ export default function AccordionList(props){
     return(
         <div className="AccordionList-root">
            {data.length > 0 && data.map((accordData) => {
-                return ( <AccordionTab data={accordData} type={props.type}/>)
+        
+                return ( <AccordionTab data={accordData} type={props.type} key={accordData.id}/>)
            })}
      
            <GlobalButton value="View More Projects" size="global-button-big" />

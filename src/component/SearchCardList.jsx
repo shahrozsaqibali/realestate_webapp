@@ -30,7 +30,7 @@ export default function SearchCardList(props){
         if(TotalPage){
             const pageCountElement = []
             for (let i = 1; i <= TotalPage; i++){
-              pageCountElement.push(<button onClick={onChangePage} className={currentpage == i? "tagcard-page-item-selected" : "tagcard-page-item" } value={i}>{i}</button>)
+              pageCountElement.push(<button key={i} onClick={onChangePage} className={currentpage == i? "tagcard-page-item-selected" : "tagcard-page-item" } value={i}>{i}</button>)
             }
             return pageCountElement
          }      
@@ -53,7 +53,9 @@ export default function SearchCardList(props){
 
         if(data == null){
           return(
-              <PreLoader />
+              <div key={32}>
+                <PreLoader />
+              </div>
           )
         }
 
@@ -61,25 +63,23 @@ export default function SearchCardList(props){
             <div className={stylePage.searchresult}>
               <div className={style.tadcardsroot}>
                       {data.data && data.data.map(assignment => {
-
-                        console.log(assignment)
                         return (
                          
-                          <Link to={`/projectinformation/${assignment.id}`}> 
-
+                          <Link to={`/projectinformation/${assignment.id}`}    key={assignment.id}> 
                           <Card 
-                              key={assignment.id}
                               state = {assignment.attributes.tag.data.attributes.name}          
                               imageUrl = {"http://localhost:1337" + assignment.attributes.project_image.data.attributes.formats.small.url}      
                               title = {assignment.attributes.project_name}
+
                               location = {assignment.attributes.locations.data.map(city => {
                                   return city.attributes.location
                               })}
+
                               developer = {assignment.attributes.developers.data.map(developName => {
                                 return developName.attributes.developer_name
-                              })}                  
+                              })}              
+
                               occupancy = {assignment.attributes.occupancy}
-            
                         />
 
                       </Link>

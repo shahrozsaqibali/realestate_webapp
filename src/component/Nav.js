@@ -27,7 +27,7 @@ export default function(props){
                                          <ul>
                                             
                                             {props.citiesList.length > 0 && props.citiesList.map(city => {
-                                                return (<li><Link to={`/projectsbycity/${city.id}`}>{city.attributes.location}</Link></li>)
+                                                return (<li key={city.id}><Link to={`/projectsbycity/${city.id}`}>{city.attributes.location}</Link></li>)
                                             })}
 
                                         </ul>

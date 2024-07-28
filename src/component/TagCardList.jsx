@@ -2,6 +2,7 @@ import React from 'react'
 import Card from "./card"
 import {Link} from "react-router-dom"
 import PreLoader from "../component/PreLoader"
+import { key } from 'localforage'
 
 function TagCardList() {
 
@@ -37,7 +38,7 @@ function TagCardList() {
       if(TotalPage){
           const pageCountElement = []
           for (let i = 1; i <= TotalPage; i++){
-            pageCountElement.push(<button onClick={onChangePage} className={currentpage == i? "tagcard-page-item-selected" : "tagcard-page-item" } value={i}>{i}</button>)
+            pageCountElement.push(<button key={i} onClick={onChangePage} className={currentpage == i? "tagcard-page-item-selected" : "tagcard-page-item" } value={i}>{i}</button>)
           }
           return pageCountElement
        }      
@@ -72,25 +73,23 @@ function TagCardList() {
               <div className='tadcards-root'>
                       {data.data && data.data.map(assignment => {
 
+              
                         return (
 
-                          <Link to={`/projectinformation/${assignment.attributes.id}`}> 
-
-                          <Card 
-                          key={assignment.id}
-                          state = {assignment.attributes.tag.data.attributes.name}          
-                          imageUrl = {"http://localhost:1337" + assignment.attributes.project_image.data.attributes.formats.small.url}      
-                          title = {assignment.attributes.project_name}
-                          location = {assignment.attributes.locations.data.map(city => {
-                              return city.attributes.location
-                          })}
-                          developer = {assignment.attributes.developers.data.map(developName => {
-                            return developName.attributes.developer_name
-                          })}                  
-                          occupancy = {assignment.attributes.occupancy}
-            
-                        />
-
+                          <Link to={`/projectinformation/${assignment.attributes.id}`}  key={assignment.attributes.project_name}> 
+                            <Card 
+                            state = {assignment.attributes.tag.data.attributes.name}          
+                            imageUrl = {"http://localhost:1337" + assignment.attributes.project_image.data.attributes.formats.small.url}      
+                            title = {assignment.attributes.project_name}
+                            location = {assignment.attributes.locations.data.map(city => {
+                                return city.attributes.location
+                            })}
+                            developer = {assignment.attributes.developers.data.map(developName => {
+                              return developName.attributes.developer_name
+                            })}                  
+                            occupancy = {assignment.attributes.occupancy}
+              
+                          />
                       </Link>
                         )
                   })}

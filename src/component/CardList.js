@@ -29,12 +29,13 @@ export default function CardList(){
             
             return(
               
-                properties.map((property) => {
-                    return (
+                properties.map((property,index) => {
 
-                        
+        
+                    return (
+                        <div key = {index}>
+
                         <Card 
-                            key = {property.id}
                             id = {property.id}
                             state = {property.attributes.tag.data.attributes.name}
                             imageUrl = {"http://localhost:1337"+ property.attributes.project_image.data.attributes.formats.small.url}
@@ -47,14 +48,13 @@ export default function CardList(){
                             })}
                             occupancy = {property.attributes.occupancy}
                         />
+                        </div>
+
 
                         
                     
                     )
                 })
-
-          
-          
             )
 
         }else{
@@ -76,7 +76,7 @@ export default function CardList(){
         .catch(error => {
             console.log(error)
         })
-        console.log("useEffect: City List")
+
     },[])
 
     React.useEffect(() => {
@@ -89,33 +89,28 @@ export default function CardList(){
                 console.log(error)
             })
         }
-        console.log("useEffect: City Projects of " + selectedCity)
+  
 
     },[selectedCity]) 
 
 
-    return(
+    return (
         <div className="cardlist">
             <div className="cardlist-head">
-                <h2>Recent Projects</h2>    
+                <h2>Recent Projects</h2>
                 <select className="cardlist--select" id="cardoption" onChange={updateSelectedCity}>
-                    {location.map((city ) => {
-                         return (
-                            <option key={city}>{city}</option>
-                         )    
-                    }  
-                    )}
+                    {location.map((city, index) => (
+                        <option key={`${city}-${index}`}>{city}</option>
+                    ))}
                 </select>
             </div>
-
+    
             <div className="cardlist-body">
-                 {getRecentProjects()}
-               
+                {getRecentProjects()}
             </div>
-            
-            <GlobalButton size="global-button-big" value="View More Projects"/>
-           
-
+    
+            <GlobalButton size="global-button-big" value="View More Projects" />
         </div>
-    )
+    );
+    
 }

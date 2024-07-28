@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM, { createRoot } from "react-dom/client"
 import App from "./App"
 
 
@@ -9,5 +9,11 @@ export default function Main(){
   )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+const rootElement = document.getElementById('root');
+
+const root = createRoot(rootElement);
+
+
+root.render(<App />)
+
 

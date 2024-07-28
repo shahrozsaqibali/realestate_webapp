@@ -9,14 +9,13 @@ import style from "../assets/css/card.module.css"
 export default function card(props){
     AOS.init();
     function ViewDetails(){
-        console.log(props.id)
+    
     }
-
-
+    
 
 
     return(
-        <div className={style.card} key={props.key} data-aos="zoom-in"> 
+        <div className={style.card}  data-aos="zoom-in" key={props.keyvalue}> 
             
             <label className={style.cardstateflag}>{props.state}</label>
 

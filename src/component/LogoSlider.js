@@ -51,18 +51,20 @@ export default function LogoSlider(){
 
 
             <div className="slider" data-animated = {true}>
-                    <div class="inner-slider">
+                    <div className="inner-slider">
                         {/*We need this code two time to duplication image list*/ }
                         {developerImage.length > 0 && (
+                              
                                 developerImage.map((image) => {
-                                    return ( <img src={"http://localhost:1337" + image.attributes.image.data.attributes.formats.thumbnail.url} id={image.id}/> )
+                                
+                                    return ( <img src={"http://localhost:1337" + image.attributes.image.data.attributes.formats.thumbnail.url} id={image.id} key={image.id}/> )
                             })
                         )
                         }
 
                         {developerImage.length > 0 && (
-                                developerImage.map((image) => {
-                                    return ( <img src={"http://localhost:1337" + image.attributes.image.data.attributes.formats.thumbnail.url} id={image.id}/> )
+                                developerImage.map((image,index) => {
+                                    return ( <img src={"http://localhost:1337" + image.attributes.image.data.attributes.formats.thumbnail.url} id={image.id} key={image.id+(developerImage.length+index)}/> )
                             })
                         )
                         }
