@@ -6,7 +6,7 @@ import noDataAnimation from "../assets/animations/noData.json"
 
 export default function CardList(){
 
-    var apiUrl = "http://localhost:1337/api/locations?fields=location"
+    var apiUrl = "https://realestate-webapp-hcms.onrender.com/api/locations?fields=location"
   
 
     //List of Cities
