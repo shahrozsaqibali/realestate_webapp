@@ -87,7 +87,7 @@ export default function Tab(props) {
                                         <Card
                                             id={project.id}
                                             state={project.attributes.tag.data.attributes.name}
-                                            imageUrl={"https://realestate-webapp-hcms.onrender.com" + project.attributes.project_image.data.attributes.formats.small.url}
+                                            imageUrl={ project.attributes.project_image.data.attributes.formats.small.url}
                                             title={project.attributes.project_name}
                                             location={project.attributes.locations.data.map((location) => location.attributes.location + " ").join(", ")}
                                             developer={""}/*{project.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}*/
@@ -136,7 +136,7 @@ export default function Tab(props) {
                                         <Card
                                             id={project.id}
                                             state={project.attributes.tag.data.attributes.name}
-                                            imageUrl={"https://realestate-webapp-hcms.onrender.com" + project.attributes.project_image.data.attributes.formats.small.url}
+                                            imageUrl={project.attributes.project_image.data.attributes.formats.small.url}
                                             title={project.attributes.project_name}
                                             location={project.attributes.locations.data.map((location) => location.attributes.location + " ").join(", ")}
                                             developer={""}/*{project.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}*/
