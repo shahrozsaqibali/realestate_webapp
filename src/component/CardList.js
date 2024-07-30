@@ -38,14 +38,14 @@ export default function CardList(){
                         <Card 
                             id = {property.id}
                             state = {property.attributes.tag.data.attributes.name}
-                            imageUrl = {"http://localhost:1337"+ property.attributes.project_image.data.attributes.formats.small.url}
+                            imageUrl = {"https://realestate-webapp-hcms.onrender.com"+ property.attributes.project_image.data.attributes.formats.small.url}
                             title = {property.attributes.project_name}
                             location = {property.attributes.locations.data.map((city) => {
                                 return city.attributes.location + " "
                             })}
-                            developer = {property.attributes.developers.data.map((developer) => {
+                           /* developer = {property.attributes.developers.data.map((developer) => {
                                 return developer.attributes.developer_name + " "
-                            })}
+                            })} */
                             occupancy = {property.attributes.occupancy}
                         />
                         </div>
