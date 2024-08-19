@@ -26,7 +26,7 @@ export default function AccordionTab(props) {
                                     state={cardData.attributes.tag.data.attributes.name}
                                     title={cardData.attributes.project_name}
                                     location={cardData.attributes.locations.data.map((city) => city.attributes.location + " ").join(", ")}
-                                    developer={cardData.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}
+                                    // developer={cardData.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}
                                     occupancy={cardData.attributes.occupancy}
                                     imageUrl={"http://localhost:1337" + cardData.attributes.project_image.data.attributes.formats.small.url}
                                 />
@@ -54,7 +54,7 @@ export default function AccordionTab(props) {
                                 state={cardData.attributes.tag.data.attributes.name}
                                 title={cardData.attributes.project_name}
                                 location={cardData.attributes.locations.data.map((city) => city.attributes.location + " ").join(", ")}
-                                developer={cardData.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}
+                                // developer={cardData.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}
                                 occupancy={cardData.attributes.occupancy}
                                 imageUrl={"http://localhost:1337" + cardData.attributes.project_image.data.attributes.formats.small.url}
                             />
