@@ -26,7 +26,7 @@ export default function BlogCard(props){
                 bloglist.map((blog) => {
                     return (
                         <div className="blogCard" key={blog.id}>
-                        <img src={"http://localhost:1337" + blog.attributes.image.data.attributes.formats.small.url} alt="Blog Image" />
+                        <img src={ blog.attributes.image.data.attributes.formats.small.url} alt="Blog Image" />
                         <div className="blogCard-text">
                             <h2>{bloglist[0].attributes.title}</h2>
                             <a href="">Read More</a>

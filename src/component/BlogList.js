@@ -16,7 +16,7 @@ export default function BlogList(){
                 <p>Blogs & Latest News regarding real estate properties in GTA</p>
             </div>
             <div className="bloglist-card-container">
-              <BlogCard url="http://localhost:1337/api/blogs?populate=image&pagination[page]=1&pagination[pageSize]=4" />
+              <BlogCard url="https://realestate-webapp-hcms.onrender.com/api/blogs?populate=image&pagination[page]=1&pagination[pageSize]=4" />
             </div>
 
         </div>

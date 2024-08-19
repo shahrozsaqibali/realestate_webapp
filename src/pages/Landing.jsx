@@ -35,7 +35,7 @@ export default function Landing(){
             <Tab id="tab2" type="city"  url = "https://realestate-webapp-hcms.onrender.com/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
 
             <AccordionList type="highlight" url = "https://realestate-webapp-hcms.onrender.com/api/highlights?fields=in&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/>
-            {/* <AccordionList type="city" url = "http://localhost:1337/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/> */}
+             <AccordionList type="city" url = "https://realestate-webapp-hcms.onrender.com/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/> 
             
             <CardList />
             <BlogList  />
