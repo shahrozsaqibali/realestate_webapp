@@ -32,7 +32,7 @@ export default function Landing(){
             <BannerOne  data-aos="fade-up" showPlatinumForm={togglePlatniumForm}/>
 
             <Tab id="tab1" type="highlight"  url = "https://realestate-webapp-hcms.onrender.com/api/highlights?fields=in&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
-            <Tab id="tab2" type="city"  url = "https://localhost/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
+            <Tab id="tab2" type="city"  url = "https://realestate-webapp-hcms.onrender.com/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
 
             <AccordionList type="highlight" url = "https://localhost/api/highlights?fields=in&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/>
             {/* <AccordionList type="city" url = "http://localhost:1337/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/> */}
