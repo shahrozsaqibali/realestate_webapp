@@ -12,7 +12,7 @@ function Blogs() {
      <div className='pgblogs-root'>
           <div><h1>Blogs</h1></div>
           <div className='pgblogs-cardlist'>
-            <BlogCard url="http://localhost:1337/api/blogs?populate=image&pagination[page]=1&pagination[pageSize]=30" />
+            <BlogCard url="https://faithful-friend-82e10ab5d1.strapiapp.com/api/blogs?populate=image&pagination[page]=1&pagination[pageSize]=30" />
           </div>
       </div>
 

@@ -31,11 +31,11 @@ export default function Landing(){
             <Hero />
             <BannerOne  data-aos="fade-up" showPlatinumForm={togglePlatniumForm}/>
 
-            <Tab id="tab1" type="highlight"  url = "https://realestate-webapp-hcms.onrender.com/api/highlights?fields=in&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
-            <Tab id="tab2" type="city"  url = "https://realestate-webapp-hcms.onrender.com/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
+            <Tab id="tab1" type="highlight"  url = "https://faithful-friend-82e10ab5d1.strapiapp.com/api/highlights?fields=in&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
+            <Tab id="tab2" type="city"  url = "https://faithful-friend-82e10ab5d1.strapiapp.com/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image" />
 
-            <AccordionList type="highlight" url = "https://realestate-webapp-hcms.onrender.com/api/highlights?fields=in&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/>
-             <AccordionList type="city" url = "https://realestate-webapp-hcms.onrender.com/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/> 
+            <AccordionList type="highlight" url = "https://faithful-friend-82e10ab5d1.strapiapp.com/api/highlights?fields=in&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/>
+             <AccordionList type="city" url = "https://faithful-friend-82e10ab5d1.strapiapp.com/api/locations?fields=location&populate=projects.locations,projects.developers,projects.tag,projects.project_image"/> 
             
             <CardList />
             <BlogList  />

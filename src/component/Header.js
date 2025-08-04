@@ -44,7 +44,7 @@ export default function Header(props){
         async function collectData(){
             
             try{
-                const data = await fetch("https://realestate-webapp-hcms.onrender.com/api/locations?fields=location")
+                const data = await fetch("https://faithful-friend-82e10ab5d1.strapiapp.com/api/locations?fields=location")
                 if(!data.ok){
                     throw new Error("Bhai kuch masla hai")
                 }

@@ -28,7 +28,7 @@ function ProjectInformation() {
         async function collectData(){
 
             try{
-                const Response = await fetch(`http://localhost:1337/api/projects/${id}?populate[1]=buyingreason.image,projectassets.image,projectassets.assets&populate[0]=keydetail,furtherdetail&populate=locations,developers,tag,highlight,project_image,imageslideshow`)
+                const Response = await fetch(`https://faithful-friend-82e10ab5d1.strapiapp.com/api/projects/${id}?populate[1]=buyingreason.image,projectassets.image,projectassets.assets&populate[0]=keydetail,furtherdetail&populate=locations,developers,tag,highlight,project_image,imageslideshow`)
                 const data = await Response.json()
                 setProjectInfo(data.data)
             }catch(Exception){
@@ -51,7 +51,7 @@ function ProjectInformation() {
 
 
     const background = {
-        'background-image': `url(http://localhost:1337${ProjectInfo.attributes.project_image.data.attributes.url})`
+        'background-image': `url(${ProjectInfo.attributes.project_image.data.attributes.url})`
     }
 
 
@@ -97,7 +97,7 @@ function ProjectInformation() {
             <div className={style.keydetailsroot} data-aos="fade-up"> 
 
                 <div className={style.keydetailMap}>
-                    <img  className={style.InfoImage} src={"http://localhost:1337" + ProjectInfo.attributes.buyingreason.image.data.attributes.formats.medium.url} />
+                    <img  className={style.InfoImage} src={ProjectInfo.attributes.buyingreason.image.data.attributes.formats.medium.url} />
                 </div>
                 <div className={style.keydetailInfo}>
                     <div className={style.keydetailinfoheadingroot}>

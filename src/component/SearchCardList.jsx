@@ -68,7 +68,7 @@ export default function SearchCardList(props){
                           <Link to={`/projectinformation/${assignment.id}`}    key={assignment.id}> 
                           <Card 
                               state = {assignment.attributes.tag.data.attributes.name}          
-                              imageUrl = {"http://localhost:1337" + assignment.attributes.project_image.data.attributes.formats.small.url}      
+                              imageUrl = {assignment.attributes.project_image.data.attributes.formats.small.url}      
                               title = {assignment.attributes.project_name}
 
                               location = {assignment.attributes.locations.data.map(city => {

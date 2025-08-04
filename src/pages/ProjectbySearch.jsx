@@ -17,7 +17,7 @@ export default function ProjectbySearch(){
     return (
         <div>
             <Header />
-             <SearchCardList searchQuery={`http://localhost:1337/api/projects?filters[$or][0][locations][location][$eqi]=${search}&filters[$or][1][developers][developer_name][$eqi]=${search}&filters[$or][2][occupancy][$eqi]=${search}&filters[$or][3][tag][name][$eqi]=${search}&filters[$or][4][propertytype][$eqi]=${search}&&filters[$or][5][project_name][$eqi]=${search}&populate=*`}/>
+             <SearchCardList searchQuery={`https://faithful-friend-82e10ab5d1.strapiapp.com/api/projects?filters[$or][0][locations][location][$eqi]=${search}&filters[$or][1][developers][developer_name][$eqi]=${search}&filters[$or][2][occupancy][$eqi]=${search}&filters[$or][3][tag][name][$eqi]=${search}&filters[$or][4][propertytype][$eqi]=${search}&&filters[$or][5][project_name][$eqi]=${search}&populate=*`}/>
             <BannerTwo />
             <Footer />
         </div>

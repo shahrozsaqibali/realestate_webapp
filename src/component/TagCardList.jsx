@@ -16,7 +16,7 @@ function TagCardList() {
     React.useEffect(function(){
   
         async function collectData(){
-            const Response = await fetch(`http://localhost:1337/api/projects?pagination[page]=${currentpage}&pagination[pageSize]=12&fields[0]=project_name&fields[1]=occupancy&filters[tag][name][$contains]=Assignments&populate=locations,developers,tag,project_image`)
+            const Response = await fetch(`https://faithful-friend-82e10ab5d1.strapiapp.com/api/projects?pagination[page]=${currentpage}&pagination[pageSize]=12&fields[0]=project_name&fields[1]=occupancy&filters[tag][name][$contains]=Assignments&populate=locations,developers,tag,project_image`)
             const data = await Response.json();
             setData(data)          
     

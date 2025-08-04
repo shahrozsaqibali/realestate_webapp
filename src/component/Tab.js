@@ -90,7 +90,7 @@ export default function Tab(props) {
                                             imageUrl={ project.attributes.project_image.data.attributes.formats.small.url}
                                             title={project.attributes.project_name}
                                             location={project.attributes.locations.data.map((location) => location.attributes.location + " ").join(", ")}
-                                            developer={""}/*{project.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}*/
+                                            developer={project.attributes.developers.data.map((developer) => developer.attributes.developer_name + " ").join(", ")}
                                             occupancy={project.attributes.occupancy}
                                         />
                                     </Link>
