@@ -6,14 +6,14 @@ import noDataAnimation from "../assets/animations/noData.json"
 
 export default function CardList(){
 
-    var apiUrl = "https://realestate-webapp-hcms.onrender.com/api/locations?fields=location"
+    var apiUrl = "https://faithful-friend-82e10ab5d1.strapiapp.com/api/locations?fields=location"
   
 
     //List of Cities
-    var [location,setlocation] = React.useState(["Mississauga"])
+    var [location,setlocation] = React.useState(["Dubai"])
 
     //Selected City
-    var [selectedCity, setSelectedCity] = React.useState("Mississauga")
+    var [selectedCity, setSelectedCity] = React.useState("Dubai")
 
     //Cards related to city
     var [properties,setProperties] = React.useState([])
@@ -38,7 +38,7 @@ export default function CardList(){
                         <Card 
                             id = {property.id}
                             state = {property.attributes.tag.data.attributes.name}
-                            imageUrl = {"https://realestate-webapp-hcms.onrender.com"+ property.attributes.project_image.data.attributes.formats.small.url}
+                            imageUrl = {property.attributes.project_image.data.attributes.formats.small.url}
                             title = {property.attributes.project_name}
                             location = {property.attributes.locations.data.map((city) => {
                                 return city.attributes.location + " "
@@ -81,7 +81,7 @@ export default function CardList(){
 
     React.useEffect(() => {
         if(selectedCity != ""){
-            var apicityurl = "http://localhost:1337/api/projects?filters[locations][location][$contains]="+selectedCity+"&populate=locations,developers,tag,project_image"
+            var apicityurl = "https://faithful-friend-82e10ab5d1.strapiapp.com/api/projects?filters[locations][location][$contains]="+selectedCity+"&populate=locations,developers,tag,project_image"
             fetch(apicityurl)
             .then(Response => Response.json())
             .then(Data => setProperties(Data.data))
