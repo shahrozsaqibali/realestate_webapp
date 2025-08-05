@@ -80,7 +80,7 @@ function TagCardList() {
                           <Link to={`/projectinformation/${assignment.attributes.id}`}  key={assignment.attributes.project_name}> 
                             <Card 
                             state = {assignment.attributes.tag.data.attributes.name}          
-                            imageUrl = {"http://localhost:1337" + assignment.attributes.project_image.data.attributes.formats.small.url}      
+                            imageUrl = {assignment.attributes.project_image.data.attributes.formats.small.url}      
                             title = {assignment.attributes.project_name}
                             location = {assignment.attributes.locations.data.map(city => {
                                 return city.attributes.location

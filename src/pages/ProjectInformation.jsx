@@ -129,7 +129,7 @@ function ProjectInformation() {
                 <div className={style.keydetailsroot} data-aos="fade-up">
     
                     <div className={style.keydetailMap}>
-                    <img  className={style.InfoImage} src={"http://Localhost:1337" + ProjectInfo.attributes.projectassets.image.data.attributes.formats.large.url} />
+                    <img  className={style.InfoImage} src={ProjectInfo.attributes.projectassets.image.data.attributes.formats.large.url} />
                     </div>
                     <div className={style.keydetailInfo}>
                         <div className={style.keydetailinfoheadingroot}>
@@ -139,9 +139,8 @@ function ProjectInformation() {
                             <ul className={style.downloadAssetsLink}>
                                 {ProjectInfo.attributes.projectassets.assets.data.map((asset) => {
                                     return(
-                                        <li><a href={"http://Localhost:1337"+ asset.attributes.url} target="_blank">{asset.attributes.name}</a></li>
-                                    )
-                                })}
+                                        <li><a href={ asset.attributes.url} target="_blank">{asset.attributes.name}</a></li>
+                                    )                                })}
 
                         
                             </ul>
@@ -163,8 +162,8 @@ function ProjectInformation() {
 
             ProjectInfo.attributes.imageslideshow.data.forEach((element) => {
                 images.push({
-                    original: "http://localhost:1337" + element.attributes.formats.large.url,
-                    thumbnail: "http://localhost:1337" + element.attributes.formats.medium.url
+                    original: element.attributes.formats.large.url,
+                    thumbnail: element.attributes.formats.medium.url
                 })
             })
             

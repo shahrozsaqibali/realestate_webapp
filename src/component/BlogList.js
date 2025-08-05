@@ -6,19 +6,19 @@ import 'aos/dist/aos.css';
 export default function BlogList(){
     AOS.init();
     
-
-
     return(
         
         <div className="bloglistcontainer" data-aos="fade-up" data-aos-duration="1000"> 
+
             <div className="bloglist-title">
                 <h1>Blog & Latest News</h1>
                 <p>Blogs & Latest News regarding real estate properties in GTA</p>
             </div>
-            <div className="bloglist-card-container">
-              <BlogCard url="https://realestate-webapp-hcms.onrender.com/api/blogs?populate=image&pagination[page]=1&pagination[pageSize]=4" />
-            </div>
 
+            <div className="bloglist-card-container">
+              <BlogCard url="https://faithful-friend-82e10ab5d1.strapiapp.com/api/blogs?populate=image&pagination[page]=1&pagination[pageSize]=4" />
+            </div>
+            
         </div>
 
     )

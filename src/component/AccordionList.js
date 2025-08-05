@@ -23,7 +23,7 @@ export default function AccordionList(props){
                 return ( <AccordionTab data={accordData} type={props.type} key={accordData.id}/>)
            })}
      
-           <GlobalButton value="View More Projects" size="global-button-big" />
+            { /*<GlobalButton value="View More Projects" size="global-button-big" /> */}
           
         </div>
     )

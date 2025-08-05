@@ -43,9 +43,9 @@ export default function CardList(){
                             location = {property.attributes.locations.data.map((city) => {
                                 return city.attributes.location + " "
                             })}
-                           /* developer = {property.attributes.developers.data.map((developer) => {
+                            developer = {property.attributes.developers.data.map((developer) => {
                                 return developer.attributes.developer_name + " "
-                            })} */
+                            })} 
                             occupancy = {property.attributes.occupancy}
                         />
                         </div>
@@ -109,7 +109,7 @@ export default function CardList(){
                 {getRecentProjects()}
             </div>
     
-            <GlobalButton size="global-button-big" value="View More Projects" />
+         {/*{ <GlobalButton size="global-button-big" value="View} More Projects" /> */}
         </div>
     );
     

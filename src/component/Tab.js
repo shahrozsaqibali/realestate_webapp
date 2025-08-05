@@ -97,7 +97,7 @@ export default function Tab(props) {
                                 ))}
 
                                 <div className="tab-footer">
-                                    <GlobalButton value="View More Projects" size="global-button-big" />
+                                    {/*<GlobalButton value="View More Projects" size="global-button-big" />*/}
                                 </div>
                             </div>
                         ))}
@@ -146,7 +146,7 @@ export default function Tab(props) {
                                 ))}
 
                                 <div className="tab-footer">
-                                    <GlobalButton value="View More Projects" size="global-button-big" />
+                                    {/**<GlobalButton value="View More Projects" size="global-button-big" /> */}
                                 </div>
                             </div>
                         ))}
